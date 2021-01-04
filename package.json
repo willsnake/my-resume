@@ -1,4 +1,11 @@
 {
+  "name": "my-resume",
+  "description": "WillSnake Resume and Portfolio",
+  "keywords": [
+    "svelte",
+    "typescript",
+    "snowpack"
+  ],
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
