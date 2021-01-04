@@ -13,6 +13,7 @@
     "test": "web-test-runner \"src/**/*.test.ts\""
   },
   "dependencies": {
+    "snowpack": "^2.18.5",
     "svelte": "^3.24.0"
   },
   "devDependencies": {
@@ -38,7 +39,6 @@
     "prettier": "^2.2.1",
     "prettier-plugin-svelte": "^1.4.2",
     "rollup": "^2.35.1",
-    "snowpack": "^2.18.4",
     "snowpack-plugin-rollup-bundle": "^0.3.3",
     "svelte-preprocess": "^4.0.8",
     "tailwindcss": "^2.0.2",
