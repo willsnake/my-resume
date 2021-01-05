@@ -227,7 +227,7 @@
     execa "^4.0.3"
     npm-run-path "^4.0.1"
 
-"@snowpack/plugin-svelte@^3.4.0":
+"@snowpack/plugin-svelte@^3.4.1":
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/@snowpack/plugin-svelte/-/plugin-svelte-3.4.1.tgz#27723d4fd6b6df3eb62a517925d1c919455b76ce"
   integrity sha512-wT25m5wmDz9mdnAA0lxgj0ixJc09UL1vSCpS8dADEDM5GU28+mqGa/64XsSulQyeziljJGo/p9pm+yj6xcdQiw==
