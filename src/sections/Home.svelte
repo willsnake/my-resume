@@ -1,6 +1,6 @@
 <style>
   #image-home {
-    background-image: url('/images/codigo.jpg');
+    background-image: url('https://res.cloudinary.com/willsnake/image/upload/v1610750180/codigo_adf7ic.jpg');
     background-repeat: no-repeat;
     background-size: 800px 820px;
     background-position: 70% 100%;
