@@ -19,6 +19,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    Access-Control-Allow-Origin = "*"
     Content-Security-Policy = "default-src 'self' https://rsms.me; script-src 'self' 'unsafe-eval' 'unsafe-inline'; worker-src 'self' blob:;"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
