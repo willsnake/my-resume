@@ -10,7 +10,7 @@
 
 <div class="fixed top-0 w-full">
   <div class="antialiased text-white bg-black">
-    <div class="w-full">
+    <div class="container mx-auto">
       <div
         class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between px-4">
