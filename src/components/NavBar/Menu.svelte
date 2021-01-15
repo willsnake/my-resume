@@ -8,7 +8,7 @@
   export let menuElements: MenuElement[] = []
 </script>
 
-<div class="min-h-screen">
+<div class="fixed top-0 w-full">
   <div class="antialiased text-white bg-black">
     <div class="w-full">
       <div
