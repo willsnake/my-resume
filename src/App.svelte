@@ -32,7 +32,7 @@
   ]
 </script>
 
-<div class="border-4 border-black bg-gray-300 h-9/10">
+<div class="h-9/10 w-full">
   <Menu menuElements={menuSections} />
   {#each sections as section}
     <svelte:component this={section.component} />
