@@ -59,3 +59,4 @@ declare module '*.png' {
 /* CUSTOM: ADD YOUR OWN HERE */
 
 declare module 'svelte-scrollto'
+declare module '@icons-pack/svelte-simple-icons'
