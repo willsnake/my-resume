@@ -7,6 +7,7 @@
 
   // Components
   import Menu from './components/NavBar/Menu.svelte'
+  import Footer from './components/Footer/index.svelte'
 
   // Types
   import type { MenuElement } from './interfaces/index'
@@ -45,4 +46,5 @@
   {#each sections as section}
     <svelte:component this={section.component} />
   {/each}
+  <Footer />
 </div>
