@@ -86,9 +86,8 @@
   ]
 </script>
 
-<div class="bg-white text-gray-700">
-  <div
-    class="container h-full mx-auto border-blue-700 border-2 flex flex-col flex-wrap py-12">
+<div id="about" class="bg-white text-gray-700">
+  <div class="container h-full mx-auto flex flex-col flex-wrap py-12">
     <h3 class="text-center text-5xl">About Me</h3>
     <h4 class="text-center py-6 text-xl w-1/2 mx-auto">
       I have over 8 years of experience developing different types of solutions
@@ -99,14 +98,15 @@
     </h4>
 
     <div class="grid grid-cols-12 gap-4">
-      <div class="border-2 border-blue-500 col-span-7">
+      <div class="col-span-6">
         <h3 class="text-3xl">Experience</h3>
         <br />
         {#each jobs as job}
           <svelte:component this={Job} jobDescription={job} />
         {/each}
       </div>
-      <div class="border-2 border-red-500 col-span-5">
+      <div class="col-span-2" />
+      <div class=" col-span-4">
         <h3 class="text-3xl">Education</h3>
         <br />
         {#each educationTitles as educationTitle}
