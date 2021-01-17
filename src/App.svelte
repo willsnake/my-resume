@@ -1,6 +1,7 @@
 <script lang="typescript">
   // Sections
   import Home from './sections/Home.svelte'
+  import About from './sections/About.svelte'
 
   // Components
   import Menu from './components/NavBar/Menu.svelte'
@@ -9,7 +10,10 @@
   import type { MenuElement } from './interfaces/index'
 
   // Sections of the single page app
-  const sections = [{ component: Home }]
+  const sections: { component: any }[] = [
+    { component: Home },
+    { component: About },
+  ]
 
   // Sections of the single top menu
   const menuSections: MenuElement[] = [
