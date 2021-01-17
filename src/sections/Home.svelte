@@ -1,4 +1,4 @@
-<div class="bg-gray-700 h-full text-white">
+<div id="home" class="bg-gray-700 h-full text-white">
   <div class="container h-full mx-auto flex justify-start items-center ">
     <div class="w-1/2 mr-8 h-full">
       <picture>
