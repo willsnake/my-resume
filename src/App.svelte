@@ -3,6 +3,7 @@
   import Home from './sections/Home.svelte'
   import About from './sections/About.svelte'
   import Portfolio from './sections/Portfolio.svelte'
+  import Contact from './sections/Contact.svelte'
 
   // Components
   import Menu from './components/NavBar/Menu.svelte'
@@ -15,6 +16,7 @@
     { component: Home },
     { component: About },
     { component: Portfolio },
+    { component: Contact },
   ]
 
   // Sections of the single top menu

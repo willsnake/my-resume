@@ -13,6 +13,7 @@
     "test": "web-test-runner \"src/**/*.test.ts\""
   },
   "dependencies": {
+    "@icons-pack/svelte-simple-icons": "^1.10.1",
     "@snowpack/plugin-build-script": "^2.0.12",
     "@snowpack/plugin-dotenv": "^2.0.5",
     "@snowpack/plugin-optimize": "^0.2.10",
