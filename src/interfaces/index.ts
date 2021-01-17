@@ -20,3 +20,22 @@ export type SchoolDescription = {
   dateRange: string
   degree: string
 }
+
+export type ProjectData = {
+  description: string
+  imagePlaceHolderData: ImagePlaceHolderData
+  name: string
+  projectUrl: string
+  tags: string[]
+}
+
+export type ImagePlaceHolderData = {
+  extraClasses?: string
+  images: Image[]
+}
+
+type Image = {
+  url: string
+  media: string
+  alt: string
+}
