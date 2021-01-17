@@ -2,6 +2,7 @@
   // Sections
   import Home from './sections/Home.svelte'
   import About from './sections/About.svelte'
+  import Portfolio from './sections/Portfolio.svelte'
 
   // Components
   import Menu from './components/NavBar/Menu.svelte'
@@ -13,6 +14,7 @@
   const sections: { component: any }[] = [
     { component: Home },
     { component: About },
+    { component: Portfolio },
   ]
 
   // Sections of the single top menu
@@ -26,8 +28,8 @@
       value: 'about',
     },
     {
-      display: 'PROJECTS',
-      value: 'projects',
+      display: 'PORTFOLIO',
+      value: 'portfolio',
     },
     {
       display: 'CONTACT',

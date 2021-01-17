@@ -86,7 +86,7 @@
   ]
 </script>
 
-<div id="about" class="bg-white text-gray-700">
+<div id="about" class="bg-gray-200 text-gray-700">
   <div class="container h-full mx-auto flex flex-col flex-wrap py-12">
     <h3 class="text-center text-5xl">About Me</h3>
     <h4 class="text-center py-6 text-xl w-1/2 mx-auto">
