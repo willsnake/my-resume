@@ -2,7 +2,7 @@
   // Interfaces
   import type { LogoInfo } from '../../interfaces/index'
   export let logoInfo: LogoInfo = {
-    display: 'WillSnake',
+    display: '/ W I L L S N A K E',
     linkTo: 'home',
   }
 </script>
