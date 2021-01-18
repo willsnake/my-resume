@@ -22,6 +22,7 @@
     "@snowpack/plugin-typescript": "^1.1.1",
     "@tsconfig/svelte": "^1.0.10",
     "autoprefixer": "^10.1.0",
+    "contentful": "^8.1.7",
     "cssnano": "^4.1.10",
     "postcss": "^8.2.2",
     "postcss-cli": "^8.3.1",
