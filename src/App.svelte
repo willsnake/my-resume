@@ -23,19 +23,19 @@
   // Sections of the single top menu
   const menuSections: MenuElement[] = [
     {
-      display: 'HOME',
+      display: 'Home',
       value: 'home',
     },
     {
-      display: 'ABOUT',
+      display: 'About',
       value: 'about',
     },
     {
-      display: 'PORTFOLIO',
+      display: 'Portfolio',
       value: 'portfolio',
     },
     {
-      display: 'CONTACT',
+      display: 'Contact',
       value: 'contact',
     },
   ]

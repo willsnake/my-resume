@@ -8,8 +8,8 @@
   export let menuElements: MenuElement[] = []
 </script>
 
-<div class="fixed top-0 w-full">
-  <div class="antialiased text-white bg-black">
+<div class="fixed top-0 w-full font-mono">
+  <div class="antialiased text-white bg-black h-15">
     <div class="container mx-auto">
       <div
         class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
