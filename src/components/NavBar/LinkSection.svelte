@@ -1,19 +1,36 @@
 <script lang="typescript">
+  import * as svelte from 'svelte'
   import * as animateScroll from 'svelte-scrollto'
   import type { MenuElement } from '../../interfaces/index'
   export let menuElement: MenuElement
+
+  let hover: boolean = false
+
+  const handleMouseEnter = () => {
+    hover = true
+  }
+
+  const handleMouseLeave = () => {
+    hover = false
+  }
 </script>
 
-<style>
-  a {
-    letter-spacing: 0.5px;
-  }
-</style>
-
 <a
+  on:mouseenter={handleMouseEnter}
+  on:mouseleave={handleMouseLeave}
   href={`#${menuElement.value}`}
-  class={`font-medium bg-transparent border-b-2 border-opacity-0 border-white md:pt-5 md:mr-2 md:mt-0 md:ml-4 hover:border-opacity-100 focus:border-opacity-100`}
   on:click={() => animateScroll.scrollTo({
       element: `#${menuElement.value}`,
       offset: -20,
-    })}>{menuElement.display}</a>
+    })}>
+  <div
+    class="inline-flex flex-col space-y-5 items-center justify-center px-4 pt-5 min-w-min bg-black">
+    <p
+      class={`text-sm font-medium tracking-wide ${hover ? `text-white` : `text-gray-400`}`}>
+      {menuElement.display}
+    </p>
+    {#if hover}
+      <div class="hidden md:block w-3/4 h-0.5 bg-white" />
+    {/if}
+  </div>
+</a>
