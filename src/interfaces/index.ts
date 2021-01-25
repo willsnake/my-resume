@@ -1,3 +1,8 @@
+export enum ButtonType {
+  PRIMARY = 'primary',
+  SECONDARY = 'secondary',
+}
+
 export type MenuElement = {
   display: string
   value: string
@@ -38,4 +43,10 @@ type Image = {
   url: string
   media: string
   alt: string
+}
+
+export type ButtonProps = {
+  disabled?: boolean
+  text: string
+  type: ButtonType
 }
