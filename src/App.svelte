@@ -41,10 +41,32 @@
   ]
 </script>
 
-<div class="h-9/10 w-full">
-  <Menu menuElements={menuSections} />
-  {#each sections as section}
-    <svelte:component this={section.component} />
-  {/each}
+<style>
+  .page-wrap {
+    grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
+    grid-template-rows: min-content min-content 1fr min-content;
+  }
+
+  @media (max-width: 600px) {
+    .page-wrap {
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+    }
+    .page-wrap > * {
+      grid-column: 1/-1 !important;
+      grid-row: auto !important;
+    }
+  }
+</style>
+
+<div class="page-wrap h-screen grid text-center">
+  <div class="col-span-full">
+    <header class="col-span-full sticky top-0">
+      <Menu menuElements={menuSections} />
+    </header>
+    {#each sections as section}
+      <svelte:component this={section.component} />
+    {/each}
+  </div>
   <Footer />
 </div>
