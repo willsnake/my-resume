@@ -86,9 +86,9 @@
   ]
 </script>
 
-<div id="about" class="bg-gray-200 text-gray-700">
-  <div class="container h-full mx-auto flex flex-col flex-wrap py-12">
-    <h3 class="text-center text-5xl">About Me</h3>
+<main id="about" class="col-span-full bg-gray-200 text-gray-700">
+  <article class="container mx-auto flex flex-col py-12">
+    <h3 class="block text-center text-5xl">About Me</h3>
     <h4 class="text-center py-6 text-xl w-1/2 mx-auto">
       I have over 8 years of experience developing different types of solutions
       for the costumer's needs. I'm highly focused on delivering quality
@@ -97,7 +97,7 @@
       always striving to develop his abilities as an engineer.
     </h4>
 
-    <div class="grid grid-cols-12 gap-4">
+    <div class="grid grid-cols-12 gap-4 text-left mt-14">
       <div class="col-span-6">
         <h3 class="text-3xl">Experience</h3>
         <br />
@@ -124,5 +124,5 @@
         </ul>
       </div>
     </div>
-  </div>
-</div>
+  </article>
+</main>

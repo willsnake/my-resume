@@ -77,8 +77,8 @@
   ]
 </script>
 
-<div id="portfolio" class="bg-white text-gray-700">
-  <div class="container h-full mx-auto flex flex-col flex-wrap py-12">
+<main id="portfolio" class="col-span-full bg-white text-gray-700 text-left">
+  <article class="container mx-auto flex flex-col flex-wrap py-12">
     <h3 class="text-center text-5xl">Portfolio</h3>
     <br />
     <div class="grid grid-cols-12 gap-4">
@@ -88,5 +88,5 @@
         </div>
       {/each}
     </div>
-  </div>
-</div>
+  </article>
+</main>

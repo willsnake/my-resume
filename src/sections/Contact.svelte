@@ -2,8 +2,8 @@
   import { Twitter, Linkedin } from '@icons-pack/svelte-simple-icons'
 </script>
 
-<div id="contact" class="bg-gray-800 text-white">
-  <div class="container h-full mx-auto flex flex-col flex-wrap py-12">
+<main id="contact" class="col-span-full bg-gray-800 text-white text-left">
+  <article class="container mx-auto flex flex-col flex-wrap py-12">
     <h3 class="text-left text-3xl">Contact</h3>
     <p class="pt-4">
       Questions? Business inquiries?
@@ -35,5 +35,5 @@
         Daniel Rodriguez Monroy
       </a>
     </div>
-  </div>
-</div>
+  </article>
+</main>

@@ -20,35 +20,29 @@
 
 <style>
   #home {
-    height: 492px;
     background-image: url('https://res.cloudinary.com/willsnake/image/upload/v1611456206/willsnakeDev/hero-x2_onymw4.png');
     background-repeat: no-repeat;
-    background-size: 100% 492px;
-    background-position: 100%;
+    background-size: 100% 100%;
+    background-position: 0 0;
   }
 </style>
 
-<div id="home" class="flex justify-end items-center w-full mt-14">
-  <div class="w-1/2 h-1/2">
+<main id="home" class="col-span-full h-screen text-left text-white">
+  <article class="grid grid-cols-2 h-full">
     <div
-      class="flex flex-col space-y-4 items-start justify-start"
-      style="width: 386px; height: 196px;">
-      <p
-        class="text-3xl font-medium tracking-wider text-white"
-        style="width: 386px;">
-        Hi, I’m WillSnake
-      </p>
-      <p class="text-xl tracking-wider text-white" style="width: 386px;">
-        a.k.a. Daniel Rodríguez
-      </p>
-      <p class="text-base tracking-wide text-gray-300" style="width: 386px;">
-        I’m a Full-Stack Engineer … React JS (cuáles otras tecnologías usas,
-        etc.)
-      </p>
-      <div class="inline-flex space-x-4 items-start justify-start">
-        <Button buttonProps={contactMeButton} />
-        <Button buttonProps={downloadResumeButton} />
+      class="col-span-1 col-start-2 flex flex-col items-start justify-center">
+      <div>
+        <p class="text-3xl font-medium tracking-wider">Hi, I’m WillSnake</p>
+        <p class="text-xl tracking-wider text-white">a.k.a. Daniel Rodríguez</p>
+        <p class="text-base tracking-wide text-gray-300">
+          I’m a Full-Stack Engineer … React JS (cuáles otras tecnologías usas,
+          etc.)
+        </p>
+        <div>
+          <Button buttonProps={contactMeButton} />
+          <Button buttonProps={downloadResumeButton} />
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </article>
+</main>
