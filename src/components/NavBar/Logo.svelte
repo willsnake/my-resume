@@ -9,4 +9,4 @@
 
 <a
   href="#{logoInfo.linkTo}"
-  class="w-full h-full text-sm font-medium text-white pl-4 md:p-0">{logoInfo.display}</a>
+  class="inline-block text-sm font-medium text-white pl-4 md:p-0">{logoInfo.display}</a>

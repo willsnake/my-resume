@@ -15,13 +15,12 @@
 </script>
 
 <div
-  class="fixed top-0 w-full inline-flex items-center justify-end bg-black font-mono"
+  class="flex items-center justify-between bg-black font-mono text-white px-4"
   style="height: 60px;">
-  <div
-    class="flex md:items-center md:justify-center md:pl-4 py-5 w-full h-full bg-black">
-    <Logo />
+  <Logo />
+  <div>
     <button
-      class="text-white rounded-lg pr-4 md:hidden focus:outline-none focus:shadow-outline"
+      class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
       on:click={toggleButton}>
       <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
         {#if open}
