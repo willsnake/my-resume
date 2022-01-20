@@ -1,7 +1,7 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { Button, ButtonProps } from './Button'
+import { Button } from './Button'
 
 // // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -18,9 +18,7 @@ const Template: ComponentStory<typeof Button> = (args) => (
   <Button {...args}>My First Button</Button>
 )
 
-export const Primary = Template.bind({
-  ButtonProps,
-})
+export const Primary = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {}
 
