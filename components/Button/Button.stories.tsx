@@ -1,7 +1,7 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import React from 'react'
+import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { Button, ButtonProps } from './Button';
+import { Button, ButtonProps } from './Button'
 
 // // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -11,16 +11,18 @@ export default {
   argTypes: {
     backgroundColor: { control: 'color' },
   },
-} as ComponentMeta<typeof Button>;
+} as ComponentMeta<typeof Button>
 
 // // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args}>My First Button</Button>;
+const Template: ComponentStory<typeof Button> = (args) => (
+  <Button {...args}>My First Button</Button>
+)
 
 export const Primary = Template.bind({
-    ButtonProps
-});
+  ButtonProps,
+})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {};
+Primary.args = {}
 
 // export const Secondary = Template.bind({});
 // Secondary.args = {
