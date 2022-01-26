@@ -47,7 +47,7 @@ TBD
 
   - [Next JS](https://nextjs.org/)
   - [Typescript](https://www.typescriptlang.org/)
-  - [Tailwind CSS](https://tailwindcss.com/)
+  - [Styled Components](https://styled-components.com/)
 
 ## Authors
 
