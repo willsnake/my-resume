@@ -1,4 +1,7 @@
-import * as NextImage from "next/image";
+import React from 'react'
+import * as NextImage from "next/image"
+
+import { ThemeProvider } from '../components/ThemeProvider'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -16,3 +19,11 @@ Object.defineProperty(NextImage, "default", {
   configurable: true,
   value: (props) => <OriginalNextImage {...props} unoptimized />,
 });
+
+export const decorators = [
+  (Story) => (
+    <ThemeProvider>
+      <Story />
+    </ThemeProvider>
+  ),
+];
