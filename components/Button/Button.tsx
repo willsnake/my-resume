@@ -1,4 +1,10 @@
-import React, { ComponentPropsWithRef, ReactNode, MouseEvent } from 'react'
+import React, {
+  ComponentPropsWithRef,
+  MouseEvent,
+  ReactNode,
+  useContext
+} from 'react'
+import { ThemeContext } from 'styled-components'
 import { StyledButton } from './styles'
 import { Variant } from './types'
 
@@ -14,16 +20,19 @@ interface IButtonProps extends ComponentPropsWithRef<'button'> {
 }
 
 const Button = ({
+  children,
   disabled = false,
   onClick = (_event: MouseEvent<HTMLButtonElement>) => {},
   variant = 'primary',
-  children,
 }: IButtonProps) => {
+  const themeContext = useContext(ThemeContext)
+
   return (
     <StyledButton
       data-variant={variant}
       disabled={disabled}
       onClick={onClick}
+      theme={themeContext}
     >
       {children}
     </StyledButton>
