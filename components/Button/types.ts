@@ -5,4 +5,5 @@ const VARIANTS_MAP = {
 
 type Variant = keyof typeof VARIANTS_MAP
 
-export { Variant, VARIANTS_MAP };
+export { VARIANTS_MAP }
+export type { Variant }

@@ -26,4 +26,5 @@ const ThemeProvider = ({
   )
 }
 
-export { ThemeProvider, IThemeProviderProps as ThemeProviderProps }
+export { ThemeProvider }
+export type { IThemeProviderProps as ThemeProviderProps}

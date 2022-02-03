@@ -39,4 +39,5 @@ const Button = ({
   )
 }
 
-export { Button, IButtonProps as ButtonProps }
+export { Button }
+export type { IButtonProps as ButtonProps }
