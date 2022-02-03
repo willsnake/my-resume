@@ -43,39 +43,44 @@ const StyledButton = styled(Button) <{ 'data-variant': Variant }>`
     cursor: pointer;
     display: flex;
     flex-direction: row;
+    font-family: 'IBM Plex Mono';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
     min-height: 42px;
     padding: 12px 16px;
     width: auto;
 
     &[data-variant="primary"] {
-        background: #254F85;
-        color: white;
+        background: ${({ theme }) => theme.colors.primary};
+        color: ${({ theme }) => theme.colors.white};
 
         &:hover {
-            background: #1076F9;
+            background: ${({ theme }) => theme.colors.tertiary};
         }
 
         &:focus {
-            background: #254F85;
-            border: 1px solid #1076F9;
-            box-shadow: 0px 0px 5px #1076F9;
+            background: ${({ theme }) => theme.colors.primary};
+            border: 1px solid ${({ theme }) => theme.colors.tertiary};
+            box-shadow: 0px 0px 5px ${({ theme }) => theme.colors.tertiary};
         }
     }
 
     &[data-variant="secondary"] {
         background-color: transparent;
-        border: 1px solid #999999;
+        border: 1px solid ${({ theme }) => theme.colors.midGrey};
         box-sizing: border-box;
-        color: #999999;
+        color: ${({ theme }) => theme.colors.midGrey};
 
         &:hover {
-            color: #EAEAEA;
-            border: 1px solid #EAEAEA;
+            color: ${({ theme }) => theme.colors.lightGrey};
+            border: 1px solid ${({ theme }) => theme.colors.lightGrey};
         }
 
         &:focus {
-            border: 1px solid #EAEAEA;
-            filter: drop-shadow(0px 0px 5px #FFFFFF);
+            border: 1px solid ${({ theme }) => theme.colors.lightGrey};
+            filter: drop-shadow(0px 0px 5px ${({ theme }) => theme.colors.white});
         }
     }
 `
