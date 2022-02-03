@@ -1,5 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { COLOR_OPTIONS } from '../../ThemeProvider/types'
 
 import { H1 as LocalH1 } from './H1'
 
@@ -9,7 +10,7 @@ export default {
   argTypes: {},
   decorators: [
     (Story) => (
-      <div style={{ padding: '3em', backgroundColor: '#111111' }}>
+      <div style={{ padding: '3em', backgroundColor: COLOR_OPTIONS['black'] }}>
         <Story />
       </div>
     ),
