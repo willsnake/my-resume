@@ -1,12 +1,12 @@
 const COLOR_OPTIONS = {
-  black: 'black',
-  darkGrey: 'darkGrey',
-  lightGrey: 'lightGrey',
-  midGrey: 'midGrey',
-  primary: 'primary',
-  secondary: 'secondary',
-  tertiary: 'tertiary',
-  white: 'white'
+  black: '#111111',
+  darkGrey: '#666666',
+  lightGrey: '#EAEAEA',
+  midGrey: '#999999',
+  primary: '#254F85',
+  secondary: '#333333',
+  tertiary: '#1076F9',
+  white: '#FAFAFA'
 } as const
 
 type ColorOptions = keyof typeof COLOR_OPTIONS
