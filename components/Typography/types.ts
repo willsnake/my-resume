@@ -1,17 +1,19 @@
+import { ColorOptions } from '../ThemeProvider/types'
+
 const ALIGN_OPTIONS = {
   left: 'left',
   center: 'center',
-    right: 'right',
-    justify: 'justify'
+  right: 'right',
+  justify: 'justify'
 } as const
 
 type AlignOptions = keyof typeof ALIGN_OPTIONS
 
-interface TypographyProps {
+type TypographyProps = {
     /** Determines the text alignment position */
     align?: AlignOptions
     /** Determines the color of the text displayed */
-    color?: string
+    color?: ColorOptions
     /** Prevents text from wrapping into a new line */
     noWrap?: boolean
 }
