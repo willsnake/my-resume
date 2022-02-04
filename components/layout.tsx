@@ -8,7 +8,7 @@ export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({
   children,
-  home
+  home,
 }: {
   children: React.ReactNode
   home?: boolean
@@ -40,7 +40,7 @@ export default function Layout({
               width={144}
               alt={name}
             />
-            <h1 >{name}</h1>
+            <h1>{name}</h1>
           </>
         ) : (
           <>
@@ -49,16 +49,15 @@ export default function Layout({
                 <Image
                   priority
                   src="/images/profile.jpg"
-                  
                   height={108}
                   width={108}
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 >
+            <h2>
               <Link href="/">
-                <a >{name}</a>
+                <a>{name}</a>
               </Link>
             </h2>
           </>
